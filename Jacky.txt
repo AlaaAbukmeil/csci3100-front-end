@@ -1,1 +1,58 @@
 Jacky is trying to create and merge a branch
+
+1. Clone the files from git repo
+Command: git clone https://github.com/AlaaAbukmeil/csci3100-front-end
+Return message: (for example only)
+Cloning into 'csci3100-front-end'...
+remote: Enumerating objects: 28, done.
+remote: Counting objects: 100% (28/28), done.
+remote: Compressing objects: 100% (18/18), done.
+remote: Total 28 (delta 6), reused 25 (delta 4), pack-reused 0
+Receiving objects: 100% (28/28), done.
+Resolving deltas: 100% (6/6), done.
+
+2. Create a branch (e.g. branch name == Jacky)
+Command: git branch Jacky
+Return message:
+
+3. Change to the new branch
+Command: git checkout Jacky
+Return message: Switched to branch 'Jacky'
+
+4. Create your change (e.g. create a Jacky.txt file)
+Command: git add Jacky.txt
+Return message:
+
+5. Commit your change 
+Command: git commit -m "Jackt.txt is added"
+Return message: 
+1 file changed, 1 insertion(+)
+ create mode 100644 Jacky.txt
+
+6. Change to the main branch
+Command: git checkout main
+Return message: 
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+7. Merge the branches
+Command: git merge Jacky
+Return message:
+Updating 288a105..c548b6a
+Fast-forward
+ Jacky.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Jacky.txt
+
+8. Push it out to github
+Command: git push origin
+Return message: (for example)
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 313 bytes | 313.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/AlaaAbukmeil/csci3100-front-end
+   288a105..c548b6a  main -> main
