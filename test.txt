@@ -1,3 +1,19 @@
 hello, alaa side
 
 test 2
+
+test branch alaa
+
+test branch alaa 2
+
+git checkout -branchname
+git add - files
+git commit -m "text"
+
+git checkout main
+
+git pull main
+
+git merge -branchname
+
+git push origin
