@@ -1,5 +1,5 @@
 function Test(){
-    return (<div></div>)
+    return (<div>login</div>)
 }
 
 export default Test
