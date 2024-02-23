@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { useNavigate } from "react-router-dom";
+import { v4 as uuidv4 } from 'uuid';
 
 function Admin_CreateUser({onUserCreate}) {
     const [userdata, setuserdata] = useState({
@@ -22,6 +23,11 @@ function Admin_CreateUser({onUserCreate}) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const newuserID = uuidv4();
+    setuserdata({
+      ...userdata,
+      userID: newuserID
+    });
     try {
       const response = await fetch('api', {
         method: 'POST',
@@ -45,8 +51,10 @@ function Admin_CreateUser({onUserCreate}) {
   };
   
   const deleteUser = (e) => {
-    const deleteuser = userdata.filer(userdata => userdata.userID !== e);
-    setuserdata(deleteUser);
+    setuserdata({
+        ...userdata,
+        users: userdata.users.filter((user) => user.userID !== e)
+    })
   };
 
   return (

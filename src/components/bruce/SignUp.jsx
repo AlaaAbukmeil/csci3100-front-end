@@ -1,7 +1,9 @@
 import React, {useState} from "react";
 import { useNavigate } from "react-router-dom";
+import { v4 as uuidv4 } from 'uuid';
 
 function SignUpPage({onRegister}) {
+    const [userID, setuserID] = useState('');
     const [usename, setusername] = useState('');
     const [password, setpassword] = useState('');
     const [birthday, setbirthday] = useState('');
@@ -9,6 +11,8 @@ function SignUpPage({onRegister}) {
 
     const handleSignUp = async(event) => {
         event.preventDefault();
+        const newuserID = uuidv4();
+        setuserID(newuserID);
         try{
             const response = await fetch('api',{
                 method: 'POST',
