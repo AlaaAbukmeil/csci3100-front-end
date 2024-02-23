@@ -1,4 +1,4 @@
-export default function Title(props) {
+export default function Title(props: any) {
   return (
     <div>
       <h1
