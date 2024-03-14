@@ -9759,16 +9759,22 @@ yarm@^0.4.0:
   integrity sha512-yCoX5QCA5Upb+VP7/UBuNGBz7MO5oWyc6degv5AifeGnakpaHeNwE/SNOPMefFKpQBionZyUeRdBo63Dl+awDQ==
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 yarn@^1.22.21:
   version "1.22.21"
   resolved "https://registry.npmjs.org/yarn/-/yarn-1.22.21.tgz"
   integrity sha512-ynXaJsADJ9JiZ84zU25XkPGOvVMmZ5b7tmTSpKURYwgELdjucAOydqIOrOfTxVYcNXe91xvLZwcRh68SR3liCg==
 =======
+=======
+>>>>>>> f79c8c2 (set up)
 yarn@^1.22.22:
   version "1.22.22"
   resolved "https://registry.npmjs.org/yarn/-/yarn-1.22.22.tgz"
   integrity sha512-prL3kGtyG7o9Z9Sv8IPfBNrWTDmXB4Qbes8A9rEzt6wkJV8mUvoirjU0Mp3GGAU06Y0XQyA3/2/RQFVuK7MTfg==
+<<<<<<< HEAD
 >>>>>>> Bruce
+=======
+>>>>>>> f79c8c2 (set up)
 
 yocto-queue@^0.1.0:
   version "0.1.0"
