@@ -1,8 +1,7 @@
-import { useParams} from "react-router-dom";
-import Title from "./Title";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import QuantityBtn from "./QuantityBtn";
-import { useState } from "react";
-import { useEffect } from "react";
+import Title from "./Title";
 
 function Test(){
     let params = useParams();
@@ -22,7 +21,7 @@ function Test(){
         <div>
             <Title title="Product Name" />
             <QuantityBtn productInfo={productDetail} />
-      </div>
+</div>
     )
 }
 
